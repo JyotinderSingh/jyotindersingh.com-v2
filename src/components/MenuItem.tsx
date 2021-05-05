@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
+import { green } from "../colors";
 
 interface MenuItemProps {
   text: String;
@@ -26,21 +27,21 @@ const MenuItem: React.FC<MenuItemProps> = ({
       borderRadius="10%"
       padding="0.6rem"
       textAlign="center"
-      borderColor="teal.300"
-      color={highlight ? "teal.200" : undefined}
+      borderColor={green}
+      color={highlight ? green : undefined}
       mr={mr}
       ml={highlight ? 2 : undefined}
       mt={mt}
       transition="all 0.3s ease"
       _hover={{
         cursor: "pointer",
-        color: highlight ? "teal.100" : "teal.200",
+        color: green,
         bg: highlight ? "rgba(77, 189, 176, 0.1)" : undefined,
       }}
     >
       <Box
         fontSize="0.95em"
-        color="teal.200"
+        color={green}
         display="inline-block"
         marginRight={1}
       >

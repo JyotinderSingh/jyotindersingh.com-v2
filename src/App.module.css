@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0;
+}
+
+.center {
+  grid-column: 2 / 10;
+}
+
+.left {
+  grid-column: 1 / 2;
+}
+
+.right {
+  grid-column: 10 / 11;
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    grid-column: 1 / 10;
+  }
+  .left {
+    grid-column: 1 / 1;
+    display: none;
+  }
+
+  .right {
+    grid-column: 11 / 11;
+    display: none;
+  }
+}

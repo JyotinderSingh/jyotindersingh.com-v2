@@ -3,6 +3,7 @@ import { mode, GlobalStyleProps, Styles, createBreakpoints } from "@chakra-ui/th
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
+import { navy } from "./colors";
 import * as serviceWorker from "./serviceWorker";
 
 export interface ChakraConfig {
@@ -27,7 +28,7 @@ const styles: Styles = {
   global: (props: GlobalStyleProps) => ({
     body: {
       color: mode("gray.800", "whiteAlpha.900")(props),
-      bg: mode("white", "#0a192f")(props),
+      bg: mode("white", navy)(props),
     },
   }),
 };

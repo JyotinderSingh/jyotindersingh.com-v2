@@ -7,7 +7,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerBody,
-  Icon,
   Spacer,
   Flex,
 } from "@chakra-ui/react";
@@ -33,7 +32,7 @@ const ResumeItem: React.FC<{ mt?: Number }> = ({ mt }) => {
 };
 
 const DrawerMenu: React.FC<DrawerMenuProps> = ({ onClose, isOpen }) => (
-  <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="sm">
+  <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="xs">
     <DrawerOverlay style={{ backdropFilter: "blur(5px)" }} />
     <DrawerContent>
       <DrawerBody
@@ -77,7 +76,6 @@ const NavBar: React.FC = () => {
       paddingTop={4}
       paddingLeft={3}
       paddingRight={3}
-      position="fixed"
       width="100%"
     >
       <Box
