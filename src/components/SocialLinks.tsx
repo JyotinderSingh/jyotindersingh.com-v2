@@ -24,7 +24,6 @@ const SocialIcon: React.FC<SocialIconProps> = ({
   <IconButton
     aria-label={ariaLabel}
     variant="ghost"
-    href="jyotindersingh.com"
     borderRadius="50%"
     icon={
       <LinkOverlay

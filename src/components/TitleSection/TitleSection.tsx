@@ -41,7 +41,7 @@ const TitleSection: React.FC = () => {
       // justifyContent="center"
       alignContent="center"
       // since height of our navbar is 4.5rem
-      height="calc(100vh - 4.5rem)"
+      height="100vh"
       paddingLeft={10}
     >
       <Box

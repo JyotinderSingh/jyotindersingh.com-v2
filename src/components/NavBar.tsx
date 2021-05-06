@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { debounce } from "../utils/helpers";
 import {
   Box,
   IconButton,
@@ -13,6 +14,7 @@ import {
 import { Link } from "react-scroll";
 import MenuItem from "./MenuItem";
 import { CgMenuRight, CgCloseO } from "react-icons/cg";
+import { navy } from "../colors";
 
 interface DrawerMenuProps {
   onClose: () => void;
@@ -104,8 +106,38 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({ onClose, isOpen }) => (
 
 const NavBar: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState<boolean>(true);
+  const [atTop, setAtTop] = useState<boolean>(true);
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      window.addEventListener("scroll", handleScroll);
+      if (window.pageYOffset === 0) {
+        setAtTop(true);
+      } else {
+        setAtTop(false);
+      }
+    };
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
   return (
     <Box
+      position="fixed"
       display="flex"
       alignItems="center"
       justifyContent="space-between"
@@ -113,7 +145,25 @@ const NavBar: React.FC = () => {
       paddingTop={4}
       paddingLeft={3}
       paddingRight={3}
+      paddingBottom={4}
       width="100%"
+      top={visible ? "0" : "-4.5rem"}
+      transition="top 0.5s ease"
+      bg="rgba(10, 25, 47, 0.5)"
+      zIndex="1000"
+      style={
+        atTop
+          ? undefined
+          : {
+              backdropFilter: "blur(10px)",
+              boxShadow: visible
+                ? "0px 0.5rem 3rem 0px rgba(0,0,0,0.25)"
+                : undefined,
+              WebkitBoxShadow: visible
+                ? "0px 0.5rem 3rem 0px rgba(0,0,0,0.25)"
+                : undefined,
+            }
+      }
     >
       <Box
         borderWidth="initial"

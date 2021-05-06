@@ -75,7 +75,14 @@ const ExperiencePanel: React.FC<ExperiencePanelProps> = ({
       </Text>
       <Box mt={5}>{workElements}</Box>
       {certificateUrl ? (
-        <Button mt={5} variant="outline" colorScheme="teal" size="md">
+        <Button
+          mt={6}
+          variant="outline"
+          colorScheme="teal"
+          size="md"
+          fontFamily="roboto mono"
+          fontSize="sm"
+        >
           <LinkOverlay href={certificateUrl} rel="noreferrer" target="_blank">
             {certificateText !== undefined
               ? certificateText

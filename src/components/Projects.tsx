@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Button, LinkOverlay } from "@chakra-ui/react";
 import React from "react";
 import { ProjectPanel, ProjectPanelProps } from "./ProjectPanel/ProjectPanel";
 import SectionTitle from "./SectionTitle";
@@ -31,6 +31,24 @@ const Projects: React.FC<ProjectsProps> = () => {
         <SectionTitle serialNo={2} title="Some things I've built" />
         <Flex flexDir="column" mt={4} justifyContent="space-between">
           {projects}
+        </Flex>
+        <Flex justifyContent="center">
+          <Button
+            mt={5}
+            variant="outline"
+            colorScheme="teal"
+            size="lg"
+            fontSize="sm"
+            fontFamily="roboto mono"
+          >
+            <LinkOverlay
+              href="https://github.com/JyotinderSingh"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Show More
+            </LinkOverlay>
+          </Button>
         </Flex>
       </Box>
     </Box>
