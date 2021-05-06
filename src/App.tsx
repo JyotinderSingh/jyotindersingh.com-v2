@@ -7,6 +7,7 @@ import Email from "./components/Email";
 import AboutMe from "./components/AboutMe/AboutMe";
 import styles from "./App.module.css";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects";
 
 export const App = () => (
   <Box>
@@ -20,6 +21,9 @@ export const App = () => (
       </div>
       <div className={styles.experience}>
         <Experience />
+      </div>
+      <div className={styles.projects}>
+        <Projects />
       </div>
       <div className={styles.left}>
         <SocialLinks />

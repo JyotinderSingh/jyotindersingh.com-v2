@@ -22,7 +22,7 @@ const Email: React.FC = () => {
           color: green,
         }}
       >
-        <LinkOverlay href="mailto:jyotindrsingh@gmail.com" target="_blank">
+        <LinkOverlay href="mailto:jyotindrsingh@gmail.com" target="_blank" rel="noreferrer">
           jyotindrsingh@gmail.com
         </LinkOverlay>
       </Text>

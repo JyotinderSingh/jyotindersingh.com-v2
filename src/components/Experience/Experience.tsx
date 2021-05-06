@@ -44,7 +44,7 @@ const ExperiencePanel: React.FC<ExperiencePanelProps> = ({
 
   points.forEach((point) =>
     workElements.push(
-      <Flex mb={2} alignItems="baseline">
+      <Flex mb={2} alignItems="baseline" key={point}>
         <BiShapeTriangle color={green} />
         <Text ml={2} color={slate} fontSize="sm" width={widthBreakpoints}>
           {point}
@@ -76,12 +76,10 @@ const ExperiencePanel: React.FC<ExperiencePanelProps> = ({
       <Box mt={5}>{workElements}</Box>
       {certificateUrl ? (
         <Button mt={5} variant="outline" colorScheme="teal" size="md">
-          <LinkOverlay
-            href={certificateUrl}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {certificateText ? certificateText : "View Certificate"}
+          <LinkOverlay href={certificateUrl} rel="noreferrer" target="_blank">
+            {certificateText !== undefined
+              ? certificateText
+              : "View Certificate"}
           </LinkOverlay>
         </Button>
       ) : null}
@@ -109,7 +107,7 @@ const Experience: React.FC = () => {
 
   experienceData.forEach((data) =>
     experiencePanels.push(
-      <TabPanel>
+      <TabPanel key={data.company}>
         <ExperiencePanel
           company={data.company}
           companyUrl={data.companyUrl}
@@ -117,14 +115,15 @@ const Experience: React.FC = () => {
           points={data.points}
           profile={data.profile}
           certificateUrl={data.certificateUrl}
+          certificateText={data.certificateText}
         />
       </TabPanel>
     )
   );
 
   return (
-    <Box height="80vh" display="grid">
-      <Box height="50vh">
+    <Box display="grid" id="experience">
+      <Box>
         <SectionTitle serialNo={2} title="Where I've worked" />
         <Box>
           <Tabs
@@ -187,6 +186,7 @@ const experienceData: ExperiencePanelProps[] = [
     profile: "Student Developer",
     certificateUrl:
       "https://drive.google.com/file/d/1beY96bwMWM9TiK_W51Bipe18kTK2tQFP/view?usp=sharing",
+    certificateText: "Certificate of Recognition",
   },
 ];
 

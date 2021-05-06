@@ -27,8 +27,12 @@ const SocialIcon: React.FC<SocialIconProps> = ({
     href="jyotindersingh.com"
     borderRadius="50%"
     icon={
-      <LinkOverlay href={link} target="_blank" cursor="ne-resize">
-        {" "}
+      <LinkOverlay
+        href={link}
+        target="_blank"
+        cursor="ne-resize"
+        rel="noreferrer"
+      >
         <LinkIcon size="1.2rem" />
       </LinkOverlay>
     }

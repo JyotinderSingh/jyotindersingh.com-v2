@@ -95,7 +95,11 @@ const TitleSection: React.FC = () => {
           fontFamily="roboto mono"
           fontSize="sm"
         >
-          <LinkOverlay href="mailto:jyotindrsingh@gmail.com" target="_blank">
+          <LinkOverlay
+            href="mailto:jyotindrsingh@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Get in Touch
           </LinkOverlay>
         </Button>

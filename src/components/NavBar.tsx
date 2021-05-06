@@ -10,6 +10,7 @@ import {
   Spacer,
   Flex,
 } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import MenuItem from "./MenuItem";
 import { CgMenuRight, CgCloseO } from "react-icons/cg";
 
@@ -18,12 +19,48 @@ interface DrawerMenuProps {
   isOpen: boolean;
 }
 
-const menuItems = (
+interface MenuItemsProps {
+  clickHandler: () => void;
+}
+
+const MenuItems: React.FC<MenuItemsProps> = ({ clickHandler }) => (
   <>
-    <MenuItem text="About" serialNo={1} />
-    <MenuItem text="Experience" serialNo={2} />
-    <MenuItem text="Work" serialNo={3} />
-    <MenuItem text="Contact" serialNo={4} />
+    <Link
+      to="about"
+      smooth={true}
+      duration={500}
+      offset={-20}
+      onClick={clickHandler}
+    >
+      <MenuItem text="About" serialNo={1} />
+    </Link>
+    <Link
+      to="experience"
+      smooth={true}
+      duration={600}
+      offset={-20}
+      onClick={clickHandler}
+    >
+      <MenuItem text="Experience" serialNo={2} />
+    </Link>
+    <Link
+      to="work"
+      smooth={true}
+      duration={700}
+      offset={-20}
+      onClick={clickHandler}
+    >
+      <MenuItem text="Work" serialNo={3} />
+    </Link>
+    <Link
+      to="contact"
+      smooth={true}
+      duration={800}
+      offset={-20}
+      onClick={clickHandler}
+    >
+      <MenuItem text="Contact" serialNo={4} />
+    </Link>
   </>
 );
 
@@ -47,7 +84,7 @@ const DrawerMenu: React.FC<DrawerMenuProps> = ({ onClose, isOpen }) => (
           justifyContent="center"
           alignItems="center"
         >
-          {menuItems}
+          <MenuItems clickHandler={onClose} />
           <Spacer />
           <ResumeItem mt={5} />
           <IconButton
@@ -101,7 +138,7 @@ const NavBar: React.FC = () => {
         color="blue.100"
         fontSize="0.9rem"
       >
-        {menuItems}
+        <MenuItems clickHandler={onClose} />
         <ResumeItem />
       </Box>
       <Box display={{ sm: "flex", md: "none" }}>

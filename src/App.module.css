@@ -24,6 +24,11 @@
   grid-column: 4 / 9;
 }
 
+.projects {
+  grid-column: 3 / 8;
+  margin-top: 15rem;
+}
+
 @media screen and (max-width: 1500px) {
   .aboutMe {
     grid-column: 3 / 9;
@@ -32,11 +37,19 @@
   .experience {
     grid-column: 4 / 10;
   }
+
+  .projects {
+    grid-column: 3 / 9;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .experience {
     grid-column: 3 / 10;
+  }
+
+  .projects {
+    margin-top: 5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -59,6 +72,11 @@
 
   .experience {
     grid-column: 2 / 10;
+  }
+
+  .projects {
+    grid-column: 2 / 10;
+    margin-top: 3rem;
   }
 }
 

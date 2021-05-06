@@ -25,12 +25,11 @@ const AboutMe: React.FC = () => {
   const heightBreakpoints = useBreakpointValue({
     base: "100vh",
     md: "60vh",
-    lg: "70vh",
   });
   return (
-    <Box height={heightBreakpoints} display="grid">
+    <Box maxHeight={heightBreakpoints} display="grid" id="about">
       <SectionTitle serialNo={1} title="About Me" />
-      <Box className={styles.container} mt={4} height={heightBreakpoints}>
+      <Box className={styles.container} mt={4}>
         <Box className={styles.about} fontSize={fontSizeBreakpoints}>
           <Text color={slate}>
             Hi, my name is Jyotinder and I'm a software engineer based in India
