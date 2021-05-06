@@ -7,7 +7,7 @@ import {
   LinkOverlay,
 } from "@chakra-ui/react";
 import React from "react";
-import { green, lightestSlate, slate } from "../../../colors";
+import { green, lightestSlate, slate } from "../../colors";
 import styles from "./TitleSection.module.css";
 
 const TitleSection: React.FC = () => {

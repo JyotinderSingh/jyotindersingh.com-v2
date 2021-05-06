@@ -20,12 +20,25 @@
   grid-column: 3 / 8;
 }
 
+.experience {
+  grid-column: 4 / 9;
+}
+
 @media screen and (max-width: 1500px) {
   .aboutMe {
     grid-column: 3 / 9;
   }
+
+  .experience {
+    grid-column: 4 / 10;
+  }
 }
 
+@media screen and (max-width: 1000px) {
+  .experience {
+    grid-column: 3 / 10;
+  }
+}
 @media screen and (max-width: 767px) {
   .center {
     grid-column: 1 / 10;
@@ -42,5 +55,24 @@
 
   .aboutMe {
     grid-column: 2 / 10;
+  }
+
+  .experience {
+    grid-column: 2 / 10;
+  }
+}
+
+/* @media screen and (max-width: 420px) {
+  .container {
+    row-gap: 5rem;
+  }
+}
+*/
+@media screen and (max-width: 321px) {
+  .aboutMe {
+    margin-top: 10rem;
+  }
+  .experience {
+    margin-top: 5rem;
   }
 }

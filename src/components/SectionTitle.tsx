@@ -25,21 +25,23 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ serialNo, title }) => {
     >
       <Flex>
         <Text fontWeight="bold">
-          <Text
-            display="inline-block"
-            fontWeight="light"
-            fontFamily="roboto mono"
-            fontSize="0.8em"
-            color={green}
-          >{`0${serialNo}${String.fromCharCode(46)}`}</Text>
-          <Box width="0.6re" display="inline-flex" />
-          {title}
+          <Flex alignItems="baseline" justifyContent="space-between">
+            <Text
+              fontWeight="light"
+              fontFamily="roboto mono"
+              fontSize="0.8em"
+              color={green}
+            >{`0${serialNo}${String.fromCharCode(46)}`}</Text>
+            {title}
+          </Flex>
         </Text>
         <Box
           style={{
             marginLeft: "1.5rem",
             borderBottom: `1px solid ${slate}`,
-            width: "50%",
+            width: "auto",
+            minWidth: "25%",
+            maxWidth: "50%",
             marginBottom: "0.6em",
           }}
         />
