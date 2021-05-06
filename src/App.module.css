@@ -16,6 +16,16 @@
   grid-column: 10 / 11;
 }
 
+.aboutMe {
+  grid-column: 3 / 8;
+}
+
+@media screen and (max-width: 1500px) {
+  .aboutMe {
+    grid-column: 3 / 9;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .center {
     grid-column: 1 / 10;
@@ -28,5 +38,9 @@
   .right {
     grid-column: 11 / 11;
     display: none;
+  }
+
+  .aboutMe {
+    grid-column: 2 / 10;
   }
 }

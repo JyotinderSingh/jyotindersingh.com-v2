@@ -7,7 +7,8 @@ import {
   LinkOverlay,
 } from "@chakra-ui/react";
 import React from "react";
-import { green, lightestSlate, slate } from "../colors";
+import { green, lightestSlate, slate } from "../../../colors";
+import styles from "./TitleSection.module.css";
 
 const TitleSection: React.FC = () => {
   const headingSize = useBreakpointValue({
@@ -77,8 +78,13 @@ const TitleSection: React.FC = () => {
           width={descriptionWidth}
         >
           Currently I'm an engineer at{" "}
-          <span style={{ color: green }}>Cloudera</span>, playing with
-          distributed systems.
+          <span
+            className={styles.underline}
+            style={{ color: green, cursor: "ne-resize" }}
+          >
+            Cloudera
+          </span>
+          , playing with distributed systems.
         </Text>
         <Button
           mt="4rem"
