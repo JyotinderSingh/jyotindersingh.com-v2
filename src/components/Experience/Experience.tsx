@@ -110,6 +110,12 @@ const Experience: React.FC = () => {
     md: undefined,
   });
 
+  const mtBreakpoints = useBreakpointValue({
+    base: "2rem",
+    sm: "5rem",
+    lg: "10rem",
+  });
+
   const experiencePanels: JSX.Element[] = [];
 
   experienceData.forEach((data) =>
@@ -129,7 +135,7 @@ const Experience: React.FC = () => {
   );
 
   return (
-    <Box display="grid" id="experience" >
+    <Box display="grid" id="experience" mt={mtBreakpoints}>
       <Box>
         <SectionTitle serialNo={2} title="Where I've worked" />
         <Box>

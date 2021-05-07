@@ -38,10 +38,9 @@ const TitleSection: React.FC = () => {
   return (
     <Box
       display="grid"
-      // since height of our navbar is 4.5rem
-      height="calc(100vh - 4.5rem)"
       mt="4.5rem"
       paddingLeft={10}
+      className={styles.container}
     >
       <Box
         paddingLeft={headingPadding}

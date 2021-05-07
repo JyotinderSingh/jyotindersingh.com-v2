@@ -23,7 +23,7 @@ const AboutMe: React.FC = () => {
   });
 
   return (
-    <Box display="grid" id="about">
+    <Box display="grid" id="about" pb={8} mt={2}>
       <SectionTitle serialNo={1} title="About Me" />
       <Box className={styles.container} mt={4}>
         <Box className={styles.about} fontSize={fontSizeBreakpoints}>

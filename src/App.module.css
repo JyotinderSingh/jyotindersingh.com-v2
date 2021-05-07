@@ -3,13 +3,11 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-auto-flow: column;
   gap: 0;
 }
 
 .center {
   grid-column: 2 / 10;
-  height: 100vh;
 }
 
 .left {
@@ -70,7 +68,7 @@
 }
 @media screen and (max-width: 767px) {
   .center {
-    grid-column: 1 / 10;
+    grid-column: 1 / 11;
   }
   .left {
     grid-column: 1 / 1;

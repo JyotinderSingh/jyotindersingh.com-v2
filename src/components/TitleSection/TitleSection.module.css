@@ -1,3 +1,10 @@
+.container {
+  /* height: max(100vh, 0); */
+  min-height: calc(100vh - -4.5rem);
+  /* min-height: -webkit-fill-available; */
+  background-size: cover;
+}
+
 .underline {
   position: relative;
 }
