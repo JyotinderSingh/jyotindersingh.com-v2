@@ -1,4 +1,6 @@
 .container {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 0;
@@ -25,8 +27,16 @@
 }
 
 .projects {
-  grid-column: 3 / 8;
+  grid-column: 3 / 9;
   margin-top: 15rem;
+}
+
+.contact {
+  grid-column: 3 / 9;
+}
+
+.footer {
+  grid-column: 4 / 8;
 }
 
 @media screen and (max-width: 1500px) {
@@ -40,6 +50,10 @@
 
   .projects {
     grid-column: 3 / 9;
+  }
+
+  .contact {
+    grid-column: 2 / 10;
   }
 }
 
@@ -77,6 +91,9 @@
   .projects {
     grid-column: 2 / 10;
     margin-top: 3rem;
+  }
+  .footer {
+    grid-column: 1 / 11;
   }
 }
 

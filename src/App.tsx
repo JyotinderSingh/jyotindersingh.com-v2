@@ -8,6 +8,8 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import styles from "./App.module.css";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 export const App = () => (
   <Box>
@@ -25,9 +27,16 @@ export const App = () => (
       <div className={styles.projects}>
         <Projects />
       </div>
+      <div className={styles.contact}>
+        <Contact />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
+      </div>
       <div className={styles.left}>
         <SocialLinks />
       </div>
+
       <div className={styles.right}>
         <Email />
       </div>

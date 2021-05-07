@@ -2,9 +2,9 @@ import { Box, Flex, Button, LinkOverlay } from "@chakra-ui/react";
 import React from "react";
 import { ProjectPanel, ProjectPanelProps } from "./ProjectPanel/ProjectPanel";
 import SectionTitle from "./SectionTitle";
-import tinyflowImage from "../assets/tinyflow.png";
-import socialapeImage from "../assets/socialape.png";
-import algoImage from "../assets/algo.jpg";
+import tinyflowImage from "../assets/tinyflow_card.png";
+import liredditImage from "../assets/lireddit.png";
+import shoplyftImage from "../assets/ShopLyft.png";
 
 interface ProjectsProps {}
 
@@ -66,20 +66,20 @@ const projectData: ProjectPanelProps[] = [
     technologies: ["Python", "NumPy"],
   },
   {
-    title: "SocialApe",
+    title: "liReddit",
     description:
-      "A Twitter style social media application that allows you to create, like, comment on, and delete screams (our version of tweets :3)",
-    technologies: ["React", "Redux", "Firebase", "MUI"],
-    githubLink: "https://github.com/JyotinderSingh/ShopLyft",
-    imgUrl: socialapeImage,
+      "A full stack mini Reddit Clone with CRUD, session management, and client side caching, written in TypeScript and GraphQL.",
+    technologies: ["GraphQL", "React", "URQL", "Express", "TS"],
+    githubLink: "https://github.com/JyotinderSingh/lireddit",
+    imgUrl: liredditImage,
   },
   {
-    title: "Algo Marathon",
+    title: "ShopLyft",
     description:
-      "A set of 300+ curated algorithm problems from LeetCode with solutions and explanations in C++. Built this repository while preparing for coding interviews.",
-    githubLink: "https://github.com/JyotinderSingh/Algorithms",
-    imgUrl: algoImage,
-    technologies: ["Python", "C++"],
+      "A fully featured marketplace application with buying, selling, inventory, and user management features.",
+    githubLink: "https://github.com/JyotinderSingh/ShopLyft",
+    imgUrl: shoplyftImage,
+    technologies: ["Flutter", "Firebase", "Dart"],
   },
 ];
 

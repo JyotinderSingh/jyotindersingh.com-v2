@@ -8,6 +8,9 @@
 .projectCard1 {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
+  box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
 }
 
 .projectDescription1 {
@@ -43,6 +46,9 @@
 .projectCard2 {
   grid-column: 4 / 9;
   grid-row: 1 / 6;
+  box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.22);
 }
 
 .projectDescription2 {

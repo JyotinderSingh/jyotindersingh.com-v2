@@ -1,10 +1,16 @@
 import { ChakraProvider, extendTheme, ColorMode } from "@chakra-ui/react";
-import { mode, GlobalStyleProps, Styles, createBreakpoints } from "@chakra-ui/theme-tools";
+import {
+  mode,
+  GlobalStyleProps,
+  Styles,
+  createBreakpoints,
+} from "@chakra-ui/theme-tools";
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./App";
 import { navy } from "./colors";
 import * as serviceWorker from "./serviceWorker";
+import "./index.css";
 
 export interface ChakraConfig {
   initialColorMode: ColorMode;
@@ -22,7 +28,7 @@ const breakpoints = createBreakpoints({
   lg: "72em",
   xl: "80em",
   "2xl": "96em",
-})
+});
 
 const styles: Styles = {
   global: (props: GlobalStyleProps) => ({
@@ -36,7 +42,7 @@ const styles: Styles = {
 const theme = extendTheme({
   styles,
   config,
-  breakpoints
+  breakpoints,
 });
 
 ReactDOM.render(

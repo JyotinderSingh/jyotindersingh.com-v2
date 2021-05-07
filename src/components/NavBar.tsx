@@ -14,7 +14,6 @@ import {
 import { Link } from "react-scroll";
 import MenuItem from "./MenuItem";
 import { CgMenuRight, CgCloseO } from "react-icons/cg";
-import { navy } from "../colors";
 
 interface DrawerMenuProps {
   onClose: () => void;
@@ -67,7 +66,15 @@ const MenuItems: React.FC<MenuItemsProps> = ({ clickHandler }) => (
 );
 
 const ResumeItem: React.FC<{ mt?: Number }> = ({ mt }) => {
-  return <MenuItem text="Resume" highlight={true} mt={mt} />;
+  return (
+    <a
+      href="https://drive.google.com/file/d/1KkIeA7mmobh6APSekgiQaFMHElqzGKVC/view?usp=sharing"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <MenuItem text="Resume" highlight={true} mt={mt} />
+    </a>
+  );
 };
 
 const DrawerMenu: React.FC<DrawerMenuProps> = ({ onClose, isOpen }) => (
@@ -155,7 +162,7 @@ const NavBar: React.FC = () => {
         atTop
           ? undefined
           : {
-              backdropFilter: "blur(10px)",
+              backdropFilter: "blur(15px)",
               boxShadow: visible
                 ? "0px 0.5rem 3rem 0px rgba(0,0,0,0.25)"
                 : undefined,

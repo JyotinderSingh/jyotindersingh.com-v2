@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
+import { Box, IconButton, LinkOverlay, Text } from "@chakra-ui/react";
 
 import styles from "./ProjectPanel.module.css";
 import {
@@ -37,10 +37,10 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
       <Text
         color={screenWidth > 970 ? lightestSlate : white}
         fontFamily="roboto mono"
-        ml={2}
-        mr={2}
-        fontSize="sm"
-        letterSpacing="1px"
+        ml={screenWidth > 400 ? 2 : 1}
+        mr={screenWidth > 400 ? 2 : 1}
+        fontSize={screenWidth > 400 ? "sm" : "xs"}
+        // letterSpacing="1px"
         key={tech}
       >
         {tech}
@@ -64,6 +64,7 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
         backgroundPosition="top"
         backgroundRepeat="no-repeat"
         transition="all 0.3s ease"
+        borderRadius="0.3rem"
         zIndex={10}
         _hover={{
           opacity: 0,
@@ -81,6 +82,7 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
         backgroundPosition="top"
+        borderRadius="0.3rem"
         transition="all 0.3s ease"
       />
       <Box
@@ -122,10 +124,7 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
         alignItems="center"
         zIndex={11}
       >
-        <Text
-          fontSize="sm"
-          color={screenWidth > 970 ? lightSlate : white}
-        >
+        <Text fontSize="sm" color={screenWidth > 970 ? lightSlate : white}>
           {description}
         </Text>
       </Box>
