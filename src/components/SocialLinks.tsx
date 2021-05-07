@@ -1,4 +1,5 @@
 import { Flex, IconButton, LinkOverlay } from "@chakra-ui/react";
+import { relative } from "path";
 import React from "react";
 import {
   FiGithub,
@@ -9,6 +10,7 @@ import {
 } from "react-icons/fi";
 import { IconType } from "react-icons/lib";
 import { green, slate } from "../colors";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 interface SocialIconProps {
   LinkIcon: IconType;
@@ -46,9 +48,17 @@ const SocialIcon: React.FC<SocialIconProps> = ({
 );
 
 const SocialLinks: React.FC = () => {
+  const { width: screenWidth } = useWindowDimensions();
+  const vertical = screenWidth > 767;
   return (
     <>
-      <Flex flexDirection="column" position="fixed" left="3rem" bottom="7.2rem">
+      <Flex
+        flexDirection={vertical ? "column" : "row"}
+        position={vertical ? "fixed" : "relative"}
+        left={vertical ? "3rem" : undefined}
+        bottom={vertical ? "7.2rem" : undefined}
+        justifyContent={vertical ? undefined : "center"}
+      >
         <SocialIcon
           LinkIcon={FiGithub}
           ariaLabel="github"
@@ -82,6 +92,7 @@ const SocialLinks: React.FC = () => {
           position: "fixed",
           left: "4.23rem",
           bottom: "0",
+          display: vertical ? "initial" : "none",
         }}
       ></div>
     </>

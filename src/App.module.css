@@ -71,8 +71,8 @@
     grid-column: 1 / 11;
   }
   .left {
-    grid-column: 1 / 1;
-    display: none;
+    grid-column: 2 / 10;
+    /* display: none; */
   }
 
   .right {

@@ -5,12 +5,11 @@ import { FaHeart } from "react-icons/fa";
 export const Footer: React.FC = () => {
   return (
     <Box
-      mt={3}
       display="grid"
       justifyContent="center"
       alignItems="end"
       paddingBottom={8}
-      height="8rem"
+      height="4rem"
     >
       <Flex
         fontFamily="roboto mono"

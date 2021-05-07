@@ -30,11 +30,11 @@ export const App = () => (
       <div className={styles.contact}>
         <Contact />
       </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
       <div className={styles.left}>
         <SocialLinks />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
       </div>
 
       <div className={styles.right}>
