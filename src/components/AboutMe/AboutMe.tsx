@@ -33,7 +33,19 @@ const AboutMe: React.FC = () => {
           </Text>
           <Text color={slate}>
             I spend my time building beautiful products, learning new tech,
-            clicking photographs, and making YouTube videos.
+            clicking photographs, and making{" "}
+            <span style={{ color: green }}>
+              <a
+                href="https://youtube.com/c/JyotinderSingh"
+                target="_blank"
+                rel="noreferrer"
+                style={{ cursor: "ne-resize" }}
+                className={styles.underline}
+              >
+                YouTube videos
+              </a>
+            </span>
+            .
           </Text>
           <Text color={slate}>
             I'm currently working on building developer tools and end to end

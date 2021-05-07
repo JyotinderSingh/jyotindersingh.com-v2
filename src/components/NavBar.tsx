@@ -156,7 +156,7 @@ const NavBar: React.FC = () => {
       width="100%"
       top={visible ? "0" : "-4.5rem"}
       transition="top 0.5s ease"
-      bg="rgba(10, 25, 47, 0.5)"
+      bg="rgba(10, 25, 47, 0.7)"
       zIndex="1000"
       style={
         atTop

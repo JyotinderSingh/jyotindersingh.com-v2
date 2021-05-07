@@ -1,5 +1,4 @@
 import { Flex, IconButton, LinkOverlay } from "@chakra-ui/react";
-import { relative } from "path";
 import React from "react";
 import {
   FiGithub,
