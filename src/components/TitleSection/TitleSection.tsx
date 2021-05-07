@@ -38,16 +38,16 @@ const TitleSection: React.FC = () => {
   return (
     <Box
       display="grid"
-      // justifyContent="center"
-      alignContent="center"
       // since height of our navbar is 4.5rem
-      height="100vh"
+      height="calc(100vh - 4.5rem)"
+      mt="4.5rem"
       paddingLeft={10}
     >
       <Box
-        height="50vh"
         paddingLeft={headingPadding}
         paddingRight={headingPadding}
+        mt="auto"
+        mb="auto"
       >
         <Text fontFamily="roboto mono" fontSize="md" color={green}>
           Hi, my name is

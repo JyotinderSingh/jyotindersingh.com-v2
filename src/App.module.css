@@ -3,11 +3,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  grid-auto-flow: column;
   gap: 0;
 }
 
 .center {
   grid-column: 2 / 10;
+  height: 100vh;
 }
 
 .left {

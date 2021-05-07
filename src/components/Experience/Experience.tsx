@@ -129,7 +129,7 @@ const Experience: React.FC = () => {
   );
 
   return (
-    <Box display="grid" id="experience">
+    <Box display="grid" id="experience" >
       <Box>
         <SectionTitle serialNo={2} title="Where I've worked" />
         <Box>

@@ -22,12 +22,8 @@ const AboutMe: React.FC = () => {
     md: "lg",
   });
 
-  const heightBreakpoints = useBreakpointValue({
-    base: "100vh",
-    md: "60vh",
-  });
   return (
-    <Box maxHeight={heightBreakpoints} display="grid" id="about">
+    <Box display="grid" id="about">
       <SectionTitle serialNo={1} title="About Me" />
       <Box className={styles.container} mt={4}>
         <Box className={styles.about} fontSize={fontSizeBreakpoints}>
