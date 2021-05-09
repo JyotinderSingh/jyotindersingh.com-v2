@@ -101,6 +101,12 @@
   .projectDescription2 {
     grid-column: 1 / 6;
   }
+  .projectTech1 {
+    grid-column: 5 / 9;
+  }
+   .projectTech2 {
+    grid-column: 1 / 5;
+  }
 }
 @media screen and (max-width: 970px) {
   .projectCard1,
@@ -129,10 +135,10 @@
   .projectTech1,
   .projectTech2 {
     text-align: left;
-    justify-content: flex-start !important;
+    /* justify-content: flex-start !important; */
     align-items: flex-start !important;
     margin-left: 0.5rem !important;
-    grid-column: 1 / 4;
+    grid-column: 1 / 10;
   }
 
   .projectLink1,

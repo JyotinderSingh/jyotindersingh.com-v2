@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton, LinkOverlay, Text } from "@chakra-ui/react";
+import { Box, IconButton, LinkOverlay, Spacer, Text } from "@chakra-ui/react";
 
 import styles from "./ProjectPanel.module.css";
 import {
@@ -37,8 +37,8 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
       <Text
         color={screenWidth > 970 ? lightestSlate : white}
         fontFamily="roboto mono"
-        ml={screenWidth > 400 ? 2 : 1}
-        mr={screenWidth > 400 ? 2 : 1}
+        // ml={screenWidth > 400 ? 2 : 1}
+        // mr={screenWidth > 400 ? 2 : 1}
         fontSize={screenWidth > 400 ? "sm" : "xs"}
         // letterSpacing="1px"
         key={tech}
@@ -134,8 +134,10 @@ export const ProjectPanel: React.FC<ProjectPanelProps> = ({
         paddingLeft={1}
         paddingRight={1}
         display="flex"
-        justifyContent={isEven ? "flex-end" : "flex-start"}
+        // justifyContent={isEven ? "flex-end" : "flex-start"}
+        justifyContent="space-around"
         alignItems="center"
+        // bg="red"
       >
         {techList}
       </Box>

@@ -69,7 +69,7 @@ const projectData: ProjectPanelProps[] = [
     title: "liReddit",
     description:
       "A full stack mini Reddit Clone with CRUD, session management, and client side caching, written in TypeScript and GraphQL.",
-    technologies: ["GraphQL", "React", "URQL", "Express", "TS"],
+    technologies: ["GraphQL", "React", "Apollo", "Express", "Redis"],
     githubLink: "https://github.com/JyotinderSingh/lireddit",
     imgUrl: liredditImage,
   },
