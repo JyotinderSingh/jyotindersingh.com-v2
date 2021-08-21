@@ -79,11 +79,11 @@ const AboutMe: React.FC = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                React
+                Node.JS
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                Node.JS
+                React
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
@@ -94,7 +94,7 @@ const AboutMe: React.FC = () => {
             <List spacing={2}>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                GraphQL
+                Kubernetes
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />

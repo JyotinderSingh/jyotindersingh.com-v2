@@ -4,7 +4,8 @@ import { ProjectPanel, ProjectPanelProps } from "./ProjectPanel/ProjectPanel";
 import SectionTitle from "./SectionTitle";
 import tinyflowImage from "../assets/tinyflow_card.png";
 import liredditImage from "../assets/lireddit.png";
-import shoplyftImage from "../assets/ShopLyft.png";
+import tokImage from "../assets/Tok.png";
+import cerealibImage from "../assets/cerealib.png";
 
 interface ProjectsProps {}
 
@@ -57,6 +58,22 @@ const Projects: React.FC<ProjectsProps> = () => {
 
 const projectData: ProjectPanelProps[] = [
   {
+    title: "Tok",
+    description:
+      "A C Virtual Machine and Java Interpreter for a dynamically typed object oriented programming language called Tok with Automated Garbage Collection, Flow Control, and Closures.",
+    technologies: ["C", "Java"],
+    githubLink: "https://github.com/JyotinderSingh/ctok",
+    imgUrl: tokImage,
+  },
+  {
+    title: "Cerealib",
+    description:
+      "A high performance serialization library for Java which supports all Java Primitives, Strings, and Primitive Arrays - offering performance gains over the language's default implementation.",
+    technologies: ["Java"],
+    githubLink: "https://github.com/JyotinderSingh/Cerealib",
+    imgUrl: cerealibImage,
+  },
+  {
     title: "TinyFlow",
     description:
       "A Deep Learning framework which includes multiple Layers with regularization, several Non-Linearities, Optimizers, and Loss Functions.",
@@ -72,14 +89,6 @@ const projectData: ProjectPanelProps[] = [
     technologies: ["GraphQL", "React", "Apollo", "Express", "Redis"],
     githubLink: "https://github.com/JyotinderSingh/lireddit",
     imgUrl: liredditImage,
-  },
-  {
-    title: "ShopLyft",
-    description:
-      "A fully featured marketplace application with buying, selling, inventory, and user management features.",
-    githubLink: "https://github.com/JyotinderSingh/ShopLyft",
-    imgUrl: shoplyftImage,
-    technologies: ["Flutter", "Firebase", "Dart"],
   },
 ];
 

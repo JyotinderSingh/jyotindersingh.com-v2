@@ -168,11 +168,11 @@ const experienceData: ExperiencePanelProps[] = [
     companyUrl: "https://www.cloudera.com/",
     duration: "Jan 2021 - present",
     points: [
-      "Architected and built an in-house Cloud Spend Managment Solution to estimate cost information for different cloud providers in real time.",
-      "Designed and implemented multiple end to end Machine Learning use cases for Cloudera Data Platform - Private Cloud.",
-      "Worked with a variety of different tools and languages such as React, Python, Flask, SQL, Hive, Docker, Kubernetes.",
+      "Architected and built an in-house Cloud Cost Managment Solution to estimate cost information and provide automated notifications for resource leaks across different cloud providers in real time.",
+      "Architected and setup a UI automation framework focussed on sophisticated end to end workflows on CDP -Public Cloud",
+      "Worked with a variety of different tools and languages such as JavaScript, React, Python, Flask, Cypress, Cloudera Data Platform, Docker, and Kubernetes.",
     ],
-    profile: "Software Engineer",
+    profile: " Associate Software Engineer",
   },
   {
     company: "CampK12",

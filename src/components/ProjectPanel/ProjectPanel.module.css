@@ -139,6 +139,7 @@
     align-items: flex-start !important;
     margin-left: 0.5rem !important;
     grid-column: 1 / 10;
+    margin-top: 1rem;
   }
 
   .projectLink1,

@@ -11,6 +11,13 @@ import { App } from "./App";
 import { navy } from "./colors";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "UA-163503172-1"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
+ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview("/home")
 
 export interface ChakraConfig {
   initialColorMode: ColorMode;

@@ -68,8 +68,8 @@ const TitleSection: React.FC = () => {
           color={slate}
           width={descriptionWidth}
         >
-          I'm a final year software engineering student from Manipal who loves
-          to build anything that has to do with data and the internet.
+          I'm a software engineer from India who loves
+          to build stuff that interacts with data and the internet.
         </Text>
         <Text
           fontSize={descriptionFontSize}
@@ -83,7 +83,7 @@ const TitleSection: React.FC = () => {
           >
             Cloudera
           </span>
-          , playing with distributed systems.
+          &nbsp;playing with distributed systems.
         </Text>
         <Button
           mt="4rem"

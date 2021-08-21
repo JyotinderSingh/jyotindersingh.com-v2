@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton, LinkOverlay, Spacer, Text } from "@chakra-ui/react";
+import { Box, IconButton, LinkOverlay, Text } from "@chakra-ui/react";
 
 import styles from "./ProjectPanel.module.css";
 import {
