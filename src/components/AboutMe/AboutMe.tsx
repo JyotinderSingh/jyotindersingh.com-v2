@@ -48,8 +48,15 @@ const AboutMe: React.FC = () => {
             .
           </Text>
           <Text color={slate}>
-            I'm currently working on building developer tools and end to end
-            solutions at{" "}
+            I'm currently working on building <span style={{ color: green }}>
+              <a
+                href="https://github.com/apache/ozone"
+                target="_blank"
+                rel="noreferrer"
+                style={{ cursor: "ne-resize" }}
+                className={styles.underline}
+              >distributed storage systems</a></span>, developer tools, and end to end
+            automation solutions at{" "}
             <span style={{ color: green }}>
               <a
                 href="https://www.cloudera.com/"
@@ -75,11 +82,11 @@ const AboutMe: React.FC = () => {
             <List spacing={2}>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                TypeScript
+                Java
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                Node.JS
+                TypeScript
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
@@ -102,7 +109,7 @@ const AboutMe: React.FC = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />
-                Java
+                Node.js
               </ListItem>
               <ListItem>
                 <ListIcon as={BiShapeTriangle} color={green} fontSize="md" />

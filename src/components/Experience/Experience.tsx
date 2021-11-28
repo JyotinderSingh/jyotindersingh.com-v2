@@ -168,18 +168,22 @@ const experienceData: ExperiencePanelProps[] = [
     companyUrl: "https://www.cloudera.com/",
     duration: "Jan 2021 - present",
     points: [
-      "Architected and built an in-house Cloud Cost Managment Solution to estimate cost information and provide automated notifications for resource leaks across different cloud providers in real time.",
-      "Architected and setup a UI automation framework focussed on sophisticated end to end workflows on CDP -Public Cloud",
-      "Worked with a variety of different tools and languages such as JavaScript, React, Python, Flask, Cypress, Cloudera Data Platform, Docker, and Kubernetes.",
+      "Building Apache Ozone, a scalable, redundant, and distributed object store for Hadoop.",
+      "Architected and built an in-house Cloud Cost Managment Solution to monitor real time cloud usage and detect resource leaks - saving thousands of dollars every month.",
+      "Architected and setup a UI automation framework and library used across multiple teams focussed on sophisticated end to end workflows on Cloudera Data Platform.",
+      "Worked with a variety of different tools and languages such as Java, JavaScript, Python, React, Flask, Cypress, Cloudera Data Platform, Docker, and Kubernetes.",
     ],
     profile: " Associate Software Engineer",
+    certificateUrl:
+      "https://github.com/apache/ozone/pulls?q=is%3Apr+author%3AJyotinderSingh+",
+    certificateText: "Open Source Contributions"
   },
   {
     company: "CampK12",
     companyUrl: "https://campk12.com/",
     duration: "Apr 2020 - Jun 2020",
     points: [
-      "Taught machine learning concepts and basics of programming to highschool students.",
+      "Taught machine learning and basics of programming to highschool students.",
       "Helped design curriculum and resources for the different courses available.",
     ],
     profile: "Instructor",

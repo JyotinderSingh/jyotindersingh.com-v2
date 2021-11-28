@@ -83,7 +83,7 @@ const TitleSection: React.FC = () => {
           >
             Cloudera
           </span>
-          &nbsp;playing with distributed systems.
+          &nbsp;playing with distributed systems and contributing to Open Source.
         </Text>
         <Button
           mt="4rem"
