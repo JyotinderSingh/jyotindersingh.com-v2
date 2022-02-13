@@ -6,6 +6,7 @@ import tinyflowImage from "../assets/tinyflow_card.png";
 import liredditImage from "../assets/lireddit.png";
 import tokImage from "../assets/Tok.png";
 import cerealibImage from "../assets/cerealib.png";
+import grapheneImage from "../assets/graphene.png";
 
 interface ProjectsProps {}
 
@@ -64,6 +65,14 @@ const projectData: ProjectPanelProps[] = [
     technologies: ["C", "Java"],
     githubLink: "https://github.com/JyotinderSingh/ctok",
     imgUrl: tokImage,
+  },
+  {
+    title: "Graphene",
+    description:
+      "A lightweight plug-n-play in-memory graph database which allows you to model and query social networks, knowledge webs, and anything else consisting of connected data points",
+    technologies: ["TypeScript"],
+    githubLink: "https://github.com/JyotinderSingh/graphene",
+    imgUrl: grapheneImage,
   },
   {
     title: "Cerealib",
