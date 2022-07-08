@@ -150,6 +150,7 @@ const Experience: React.FC = () => {
               maxW={maxWBreakpoints}
               overflowY="clip"
             >
+              <Tab>Google</Tab>
               <Tab>Cloudera</Tab>
               <Tab>CampK12</Tab>
               <Tab>Samsung</Tab>
@@ -164,6 +165,15 @@ const Experience: React.FC = () => {
 
 const experienceData: ExperiencePanelProps[] = [
   {
+    company: "Google",
+    companyUrl: "https://blog.google/",
+    duration: "Jul 2022 - present",
+    points: [
+      "Working in the Google Ads organisation, as a part of the Ads API Infra team.",
+    ],
+    profile: "Software Engineer II",
+  },
+  {
     company: "Cloudera",
     companyUrl: "https://www.cloudera.com/",
     duration: "Jan 2021 - present",
@@ -176,7 +186,7 @@ const experienceData: ExperiencePanelProps[] = [
     profile: " Associate Software Engineer",
     certificateUrl:
       "https://github.com/apache/ozone/pulls?q=is%3Apr+author%3AJyotinderSingh+",
-    certificateText: "Open Source Contributions"
+    certificateText: "Open Source Contributions",
   },
   {
     company: "CampK12",

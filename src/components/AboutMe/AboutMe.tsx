@@ -48,27 +48,9 @@ const AboutMe: React.FC = () => {
             .
           </Text>
           <Text color={slate}>
-            I'm currently working on building <span style={{ color: green }}>
-              <a
-                href="https://github.com/apache/ozone"
-                target="_blank"
-                rel="noreferrer"
-                style={{ cursor: "ne-resize" }}
-                className={styles.underline}
-              >distributed storage systems</a></span>, developer tools, and end to end
-            automation solutions at{" "}
-            <span style={{ color: green }}>
-              <a
-                href="https://www.cloudera.com/"
-                target="_blank"
-                rel="noreferrer"
-                style={{ cursor: "ne-resize" }}
-                className={styles.underline}
-              >
-                Cloudera
-              </a>
-            </span>
-            .
+            I'm currently working as a backend engineer on the{" "}
+            <span style={{ color: green }}>Google Ads API Infra</span> team,
+            building distributed systems at planet-scale.
           </Text>
           <Text color={slate} mt={2}>
             Here are a few technologies I've been working with recently:

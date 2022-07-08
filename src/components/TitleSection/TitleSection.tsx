@@ -68,22 +68,22 @@ const TitleSection: React.FC = () => {
           color={slate}
           width={descriptionWidth}
         >
-          I'm a software engineer from India who loves
-          to build stuff that interacts with data and the internet.
+          I'm a software engineer from India who loves to build stuff that
+          interacts with data and the internet.
         </Text>
         <Text
           fontSize={descriptionFontSize}
           color={slate}
           width={descriptionWidth}
         >
-          Currently I'm an engineer at{" "}
+          Currently I'm a backend engineer at{" "}
           <span
             className={styles.underline}
             style={{ color: green, cursor: "ne-resize" }}
           >
-            Cloudera
+            Google
           </span>
-          &nbsp;playing with distributed systems and contributing to Open Source.
+          &nbsp;working on Google Ads.
         </Text>
         <Button
           mt="4rem"
