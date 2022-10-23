@@ -76,7 +76,7 @@ const TitleSection: React.FC = () => {
           color={slate}
           width={descriptionWidth}
         >
-          Currently I'm a backend engineer at{" "}
+          Currently, I'm a backend engineer at{" "}
           <span
             className={styles.underline}
             style={{ color: green, cursor: "ne-resize" }}

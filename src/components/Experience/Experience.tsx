@@ -169,7 +169,8 @@ const experienceData: ExperiencePanelProps[] = [
     companyUrl: "https://blog.google/",
     duration: "Jul 2022 - present",
     points: [
-      "Working in the Google Ads organisation, as a part of the Ads API Infra team.",
+      "Working in the Google Ads, as a part of the Ads API Infra team.",
+      "Designing and implementing key features for the Schema and Query Planner modules of a planet-scale Relational Online Analytical Processing (ROLAP) engine for the next generation of Ads infrastructure.",
     ],
     profile: "Software Engineer II",
   },
